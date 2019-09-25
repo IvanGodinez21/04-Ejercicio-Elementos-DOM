@@ -10,6 +10,14 @@ var btnProbar = document.querySelector("#btnProbar")
 
 btnProbar.addEventListener("click", () => {
     let num = Number(inpNo1.value)
+    let num2 = Number(inpNo2.value)
+
+    if (num === num2) {
+        alert("Gemelos")
+    }
+    else {
+        alert("Son unicos y originales")
+    }
 
     if (num >= 18) {
         alert ("Bienvenido Bruh")
