@@ -13,26 +13,42 @@ btnProbar.addEventListener("click", () => {
     let num2 = Number(inpNo2.value)
 
     if (num === num2) {
-        alert("Gemelos")
+        alert("Son identicos")
     }
-    else {
-        alert("Son unicos y originales")
+    else if (num <= 18) {
+        alert("diferentes")
     }
 
     if (num >= 18) {
         alert ("Bienvenido Bruh")
     } 
     else {
-        alert("Adios popo")
+        alert("Esta no es una zona segura, porfavor vuelva a una zona segura")
     }
 
     if (num < 1000) {
-        alert("Es una centena carnal")
+        alert("Es una centena")
     }
     else {
-        alert("Fuera de mis tierras")
+        alert("No es una centena")
     }
 })
+
+var rol = prompt("¿Qué tipo de usuario eres?")
+rol = rol.toLowerCase() // rol.toUpperCase()
+
+switch(rol) {
+    case "estudiante":
+        console.log("Bienvenido a SICEUC")
+        alert("Bienvenido a SICEUC")
+        break
+    case "maestro":
+        console.log("Bienvenido al sistema de calificaciones")
+        alert("Bienvenido al sistema de calificaciones")
+        break
+    default:
+        alert("Usuario denegado")
+}
 
 btnSumar.addEventListener("click", () => {
     inpResultado.value = Number(inpNo1.value) + Number(inpNo2.value)
